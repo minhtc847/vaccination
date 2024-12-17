@@ -1,0 +1,49 @@
+[
+    {
+        "title": "Home",
+        "path": "/"
+    },
+    {
+        "title": "Customer management",
+        "childrens": [
+            {
+                "title": "Customer List",
+                "path": "/customer/list"
+            },
+            {
+                "title": "Create Customer",
+                "path": "/customer/create"
+            }
+        ]
+    },
+    {
+        "title": "Injection Result",
+        "childrens": [
+            {
+                "title": "Injection Result List",
+                "path": "/result/list"
+            },
+            {
+                "title": "Create Injection Result",
+                "path": "/result/create"
+            }
+        ]
+    },
+    {
+        "title": "Report",
+        "childrens": [
+            {
+                "title": "Report Injection Result",
+                "path": "/report/injection_result"
+            },
+            {
+                "title": "Report Customer",
+                "path": "/report/customer"
+            },
+            {
+                "title": "Report Vaccine",
+                "path": "/report/vaccine"
+            }
+        ]
+    }
+]

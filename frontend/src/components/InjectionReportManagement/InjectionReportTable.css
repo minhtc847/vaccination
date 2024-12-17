@@ -1,0 +1,5 @@
+.form-check-input:checked {
+    background-color: #009688 !important;
+    border-color: #009688 !important;
+    --bs-form-check-bg-image: none !important;
+}

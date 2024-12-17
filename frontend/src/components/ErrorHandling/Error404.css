@@ -1,0 +1,27 @@
+.mainbox {
+  margin: auto;
+  height: 600px;
+  width: 600px;
+  position: relative;
+}
+
+.err {
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 11rem;
+}
+
+.far {
+  font-size: 8.5rem;
+}
+
+.msg {
+  display: inline;
+  text-align: center;
+  font-family: 'Nunito Sans', sans-serif;
+  font-size: 1.6rem;
+  width: 75%;
+}
+
+a {
+  text-decoration: none !important;
+}

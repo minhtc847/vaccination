@@ -1,0 +1,299 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.row {
+  margin-right: 0 !important;
+}
+
+.container {
+  padding-right: 0 !important;
+}
+
+.sidebar-row {
+  padding-right: 0 !important;
+}
+
+.tableFixHead {
+  overflow: auto;
+  height: 315px
+}
+
+.tableFixHead thead th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.tableFixHead tbody th {
+  position: sticky;
+  left: 0;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.user-profile-container {
+  background-image: url('../public/assets/background.png');
+  background-size: cover;
+  background-position: center left;
+  height: 140px;
+  /* Adjust height as needed */
+  width: 100%;
+  padding: 20px;
+}
+
+.user-profile {
+  display: flex;
+  align-items: flex-start;
+  /* Align items to the start (left) */
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: white;
+  /* Adjust margin between profile card and arrow */
+}
+
+.profile-card img {
+  width: 70px;
+  /* Adjust profile picture size */
+  height: 70px;
+}
+
+.icon {
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  align-items: flex-end;
+}
+
+.icon .toggle-btn {
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.user-profile.open .icon .toggle-btn {
+  transform: rotate(180deg);
+}
+
+.fa-chevron-up {
+  font-size: 18px;
+  /* Adjust icon size */
+  color: white;
+  /* Adjust icon color */
+
+}
+
+.sidebar {
+  height: 100%;
+  flex-shrink: 0;
+  overflow: auto;
+  background-color: white;
+}
+
+
+.sidebar-item {
+  padding: .75em 1em;
+  display: block;
+  transition: background-color .15s;
+  text-decoration: none;
+}
+
+.sidebar-item:hover {
+  background-color: rgba(245, 245, 245, 1);
+  /* Subtle hover effect */
+  text-decoration: none;
+  color: #009688;
+}
+
+.sidebar-title {
+  display: flex;
+  font-size: 14 px;
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+}
+
+.sidebar-title:hover {
+  cursor: pointer;
+}
+
+.sidebar-title .selected {
+  color: #009688;
+}
+
+.pointer:hover {
+  cursor: pointer;
+  transition: transform .3s;
+  color: #009688;
+}
+
+.sidebar-title .toggle-btn {
+  cursor: pointer;
+  transition: transform .3s;
+}
+
+.sidebar-content {
+  padding-top: .25em;
+  overflow: hidden;
+}
+
+.sidebar-item.open>.sidebar-content {
+  height: auto;
+}
+
+.sidebar-item .selected {
+  color: #009688;
+}
+
+.child-title {
+  display: flex;
+  font-size: 14px;
+  /* Adjusted to be slightly smaller than parent */
+  text-decoration: none;
+  color: black;
+  justify-content: space-between;
+}
+
+.child-item {
+  padding: .5em 1.5em;
+  /* Indented for children */
+  display: block;
+  transition: background-color .15s;
+  text-decoration: none;
+}
+
+.child-item:hover {
+  background-color: rgba(245, 245, 245, 1);
+  text-decoration: none;
+  /* Subtle hover effect */
+}
+
+.child-title .selected {
+  font-weight: bold;
+  color: black;
+  /* Match selected color */
+}
+
+/* Ensure selected child items also have a different background */
+.child-item.selected {
+  background-color: rgba(0, 150, 136, 0.1);
+  /* Light teal background for selected */
+}
+
+.table-head {
+  background-color: #009688;
+}
+
+.container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #009688;
+  color: white;
+}
+
+.custom-search {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #007bff;
+}
+
+.custom-select {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #007bff;
+}
+
+.custom-pagination .page-item .page-link {
+  font-size: 13px;
+  border: none;
+  outline: none;
+}
+
+.custom-pagination .page-item.active .page-link {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: white;
+}
+
+.custom-id {
+  text-decoration: none;
+  cursor: pointer;
+  color: #007bff;
+}
+
+.swal2-confirm {
+  background-color: #009688 !important;
+  /* Green background */
+  color: white !important;
+  /* White text */
+  border: none !important;
+  padding: 10px 20px !important;
+  font-size: 16px !important;
+  cursor: pointer !important;
+}

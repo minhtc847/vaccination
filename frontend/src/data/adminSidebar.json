@@ -1,0 +1,114 @@
+[
+    {
+        "title": "Home",
+        "path": "/"
+    },
+    {
+        "title": "Employee management",
+        "childrens": [
+            {
+                "title": "Employee List",
+                "path": "/employee/list"
+            },
+            {
+                "title": "Create Employee",
+                "path": "/employee/create"
+            }
+        ]
+    },
+    {
+        "title": "Customer management",
+        "childrens": [
+            {
+                "title": "Customer List",
+                "path": "/customer/list"
+            },
+            {
+                "title": "Create Customer",
+                "path": "/customer/create"
+            }
+        ]
+    },
+    {
+        "title": "Vaccine Type management",
+        "childrens": [
+            {
+                "title": "Vaccine Type List",
+                "path": "/vaccine_type/list"
+            },
+            {
+                "title": "Create Vaccine Type",
+                "path": "/vaccine_type/create"
+            }
+        ]
+    },
+    {
+        "title": "Vaccine management",
+        "childrens": [
+            {
+                "title": "Vaccine List",
+                "path": "/vaccine/list"
+            },
+            {
+                "title": "Create Vaccine",
+                "path": "/vaccine/create"
+            }
+        ]
+    },
+    {
+        "title": "Injection Schedule",
+        "childrens": [
+            {
+                "title": "Injection Schedule List",
+                "path": "/schedule/list"
+            },
+            {
+                "title": "Create Injection Schedule",
+                "path": "/schedule/create"
+            }
+        ]
+    },
+    {
+        "title": "Injection Result",
+        "childrens": [
+            {
+                "title": "Injection Result List",
+                "path": "/result/list"
+            },
+            {
+                "title": "Create Injection Result",
+                "path": "/result/create"
+            }
+        ]
+    },
+    {
+        "title": "News",
+        "childrens": [
+            {
+                "title": "News List",
+                "path": "/news/list"
+            },
+            {
+                "title": "Create News",
+                "path": "/news/create"
+            }
+        ]
+    },
+    {
+        "title": "Report",
+        "childrens": [
+            {
+                "title": "Report Injection Result",
+                "path": "/report/injection_result"
+            },
+            {
+                "title": "Report Customer",
+                "path": "/report/customer"
+            },
+            {
+                "title": "Report Vaccine",
+                "path": "/report/vaccine"
+            }
+        ]
+    }
+]
